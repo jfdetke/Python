@@ -54,6 +54,17 @@ def unpack_tuple():
     print(f"c is {c}")
     print("---------")
 
+    a,b,c,*d = t
+    print(f"a is {a}")
+    print(f"b is {b}")
+    print(f"c is {c}")
+    print(f"d is {d}")  # since there were no 'extra' elements, this will be an empty list
+    if d :
+        print(f"d is {d}")
+    else:
+        print(f"d :{d} should be empty list")
+    print("---------")
+
 
 def unpack_list():
     print("Unpacking list")
